@@ -1,38 +1,248 @@
-.App {
-  text-align: center;
+.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 21px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  margin-left: 20%;
+  padding: 20px;
+  height: 1000px;
+  background-color: #FBFCFC;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerImage {
+  margin-bottom: 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.activeBreadcrumb {
+  color: black;
+  text-transform: none;
+}
+
+.inactiveBreadcrumb {
+  color: grey;
+  text-transform: none
+}
+
+.titleBar {
+  justify-content: space-between;
   display: flex;
-  flex-direction: column;
+  margin: 40px 0 20px 0;
   align-items: center;
+}
+
+.titleBarButtons {
+  display: flex;
+  height: 40px;
+  gap: 12px;
+}
+
+.title {
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #1E2524;
+}
+
+.breadcrumbContainer {}
+
+.permissionButton {
+  color: red;
+  border-radius: 30px;
+}
+
+.staffInfo {
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 8px 28px -8px rgb(16 24 40 / 6%), 0px 0px 7px -2px rgb(16 24 40 / 8%);
+  border-radius: 12px;
+  padding: 20px 0;
+}
+
+.avatarSection {
+  flex-direction: column;
+  display: flex;
+  flex: 0 1 200px;
+  padding: 2em 3em;
+  max-width: 200px;
+  align-items: center;
+  gap: 20px;
+}
+
+.infoSection {
+  flex: 1 1 auto;
+}
+
+.buttonLabel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #667085;
+}
+
+.customTextInput {
+  width: 250px;
+  height: 40px;
+}
+
+.addressInput {
+  height: 40px;
+}
+
+.drawerItem {
+  display: block;
+  color: #6F8381;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.drawerHeaders {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #AEBEBC;
+}
+
+.userImage {
+  border-radius: 12px;
+}
+
+.drawerDivider {
+  margin: 20px 0px !important;
+}
+
+.drawerIcon {
+  min-width: 40px !important;
+}
+
+.dot {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 4px;
+
+  background: #00ACB9;
+  color: #fff;
+  text-align: center;
+
+  font: 10px Arial, sans-serif;
+}
+
+.admin {
+  width: 200px;
+  height: 50px;
+  margin: 40px 0;
+  background: #F6F9F9;
+  border: 1px solid #F1F4F3;
+  border-radius: 12px;
+  display: flex;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+.adminDetails {
+  padding: 0 20px;
+}
+
+.adminName {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1E2524;
+}
+
+.adminType {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #837B8E;
+}
+
+.adminNumber {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #6F6B88;
+}
+
+.chevronIcon {
+  flex-grow: 1;
+}
+
+.multilineBox {
+  width: 93% !important;
+  border-radius: 12px;
+}
+
+.mr-1 {
+  margin-top: 1em !important;
+}
+
+.personalInfoHeader {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1E2524;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.submitButtons {
+  gap: 20px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 30px;
+}
+
+.subDrawer {
+  background: #FFFFFF;
+  box-shadow: 0px 3px 22px rgba(45, 77, 108, 0.05);
+  border-radius: 8px;
+  padding: 2px 4px;
+}
+
+.selectedNav {
+  background: #E5FDFF;
+  border-radius: 8px;
+  padding: 9px 2px 9px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #00ACB9;
+  cursor: pointer;
+}
+
+.inactiveNav {
+  background: #FFF;
+  border-radius: 8px;
+  padding: 9px 2px 9px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #6F8381;
+}
+
+li a.active {
+  background-color: #04AA6D;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
